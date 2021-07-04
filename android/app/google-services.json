@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431137457778",
+    "project_id": "sosal-efd4f",
+    "storage_bucket": "sosal-efd4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431137457778:android:aa4e26715c7be6c146e4eb",
+        "android_client_info": {
+          "package_name": "com.example.sosal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431137457778-msbnsdd8eelrd3rffpipmuium4qr97hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5jPCt7rM4ccxqRWTwqerXTgPFON1ttWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431137457778-msbnsdd8eelrd3rffpipmuium4qr97hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
