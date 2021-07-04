@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.amber),
-      title: 'SOSAL y',
+      title: 'SOSAL',
       home: Wrapper(),
     );
   }
