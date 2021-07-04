@@ -34,6 +34,6 @@ class _WrapperState extends State<Wrapper> {
           }
         },
       ),
-    ));
+    ),);
   }
 }
