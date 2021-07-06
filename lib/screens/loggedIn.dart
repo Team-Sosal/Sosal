@@ -4,11 +4,12 @@ import 'package:provider/provider.dart';
 import 'package:sosal/screens/home_page.dart';
 import 'package:sosal/screens/profile_page.dart';
 import 'package:sosal/screens/search_page.dart';
+import 'package:sosal/screens/user.dart';
 import '../services/signIn.dart';
 
 class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
-
+  final UserData userData;
+  Login({Key? key, required this.userData}) : super(key: key);
   @override
   _LoginState createState() => _LoginState();
 }
@@ -36,10 +37,14 @@ class _LoginState extends State<Login> {
       ),
       bottomNavigationBar: buildBottomNav(),
       body: _currentIndex == 0
-          ? HomePage()
+          ? HomePage(
+              userData: widget.userData,
+            )
           : _currentIndex == 1
               ? Search()
-              : Profile(),
+              : Profile(
+                  userData: widget.userData,
+                ),
     );
   }
 
