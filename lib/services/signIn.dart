@@ -53,13 +53,16 @@ class GoogleSignInProvider extends ChangeNotifier {
                 .where('code', isEqualTo: code)
                 .get();
           } while (qSnap.size != 0);
+
           FirebaseFirestore.instance
               .collection('users')
               .doc(firebaseUser.user!.uid)
               .set({
             'name': firebaseUser.user!.displayName,
             'pic': firebaseUser.user!.photoURL,
-            'code': code
+            'code': code,
+            'receive': [],
+            'sent': []
           });
         }
       }

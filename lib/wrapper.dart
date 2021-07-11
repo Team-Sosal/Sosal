@@ -53,7 +53,8 @@ class Usr extends StatelessWidget {
       String name = a.get('name');
       String code = a.get('code');
       String url = a.get('pic');
-      return UserData(name, code, url);
+      String uid = a.id;
+      return UserData(name, code, url, uid);
     }
 
     return FutureBuilder<UserData>(
